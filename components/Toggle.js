@@ -19,7 +19,7 @@ export default class Toggle extends Component {
   render() {
     return (
       <React.Fragment>
-        <button onClick={handleClick}>
+        <button onClick={this.handleClick}>
         {this.state.isToggleOn ? 'ON' : 'OFF'}
         </button>
       </React.Fragment>
