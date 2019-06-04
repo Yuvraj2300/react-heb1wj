@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Toggle from './components/Toggle';
+import LoginModule from './components/LoginModule';
+
 
 export default class App extends Component {
   render() {
@@ -9,6 +11,7 @@ export default class App extends Component {
       This is a component.. App
       </div>
       <Toggle />
+      <LoginModule />
       </React.Fragment>
     );
   }
