@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Greeting from './Greeting';
+import LoginButton from './ln-lg-btn/LoginButton';
+import LogoutButton from './ln-lg-btn/LogoutButton';
 
 export default class LoginModule extends Component {
   constructor(props) {
@@ -20,13 +22,14 @@ export default class LoginModule extends Component {
 
   render() {
     const isLoggedIn = this.state.isLoggedIn;
+    console.log(isLoggedIn);
     let button;
     if (isLoggedIn) {
       button = <LogoutButton onClick={(e) =>
         this.handleLogoutClick(e)
       } />
     } else {
-      button = <LogoutButton onClick={(e) =>
+      button = <LoginButton onClick={(e) =>
         this.handleLoginClick(e)
       } />
     }
