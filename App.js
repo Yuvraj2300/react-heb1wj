@@ -20,6 +20,7 @@ export default class App extends Component {
         <LoginModule />
         <Mailbox unreadMessages={this.state.unreadMessages}
           isLoggedIn={this.state.isLoggedIn} />
+          <br></br>
         <Page />
       </React.Fragment>
     );
