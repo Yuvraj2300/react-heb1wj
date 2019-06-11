@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import Toggle from './components/Toggle';
 import LoginModule from './components/LoginModule';
 import Mailbox from './components/Mailbox';
+import Page from './components/Page';
 
 export default class App extends Component {
   state = {
     unreadMessages: 8,
-    isLoggedIn  : true
+    isLoggedIn: true
   };
 
   render() {
@@ -18,7 +19,8 @@ export default class App extends Component {
         <Toggle />
         <LoginModule />
         <Mailbox unreadMessages={this.state.unreadMessages}
-        isLoggedIn={this.state.isLoggedIn} />
+          isLoggedIn={this.state.isLoggedIn} />
+        <Page />
       </React.Fragment>
     );
   }

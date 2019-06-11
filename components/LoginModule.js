@@ -24,6 +24,8 @@ export default class LoginModule extends Component {
     const isLoggedIn = this.state.isLoggedIn;
     console.log(isLoggedIn);
     let button;
+   
+  
     if (isLoggedIn) {
       button = <LogoutButton onClick={(e) =>
         this.handleLogoutClick(e)
