@@ -3,6 +3,7 @@ import Toggle from './components/Toggle';
 import LoginModule from './components/LoginModule';
 import Mailbox from './components/Mailbox';
 import Page from './components/Page';
+import ListKeys from './components/ListKeys';
 
 export default class App extends Component {
   state = {
@@ -22,6 +23,8 @@ export default class App extends Component {
           isLoggedIn={this.state.isLoggedIn} />
           <br></br>
         <Page />
+        <br></br>
+        <ListKeys />
       </React.Fragment>
     );
   }
