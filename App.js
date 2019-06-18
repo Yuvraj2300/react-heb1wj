@@ -4,6 +4,7 @@ import LoginModule from './components/LoginModule';
 import Mailbox from './components/Mailbox';
 import Page from './components/Page';
 import ListKeys from './components/ListKeys';
+import NameForm  from './components/NameForm';
 
 export default class App extends Component {
   state = {
@@ -25,6 +26,8 @@ export default class App extends Component {
         <Page />
         <br></br>
         <ListKeys />
+        <br></br>
+        <NameForm />
       </React.Fragment>
     );
   }
