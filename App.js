@@ -5,7 +5,8 @@ import Mailbox from './components/Mailbox';
 import Page from './components/Page';
 import ListKeys from './components/ListKeys';
 import NameForm from './components/forms/NameForm';
-import EssayForm from './components/forms/EssayForm'
+import EssayForm from './components/forms/EssayForm';
+import FlavorForm from './components/forms/FlavorForm';
 
 export default class App extends Component {
   state = {
@@ -34,6 +35,7 @@ export default class App extends Component {
         <NameForm />
         <e>-------</e>
         <EssayForm />
+        <FlavorForm />
       </React.Fragment>
     );
   }

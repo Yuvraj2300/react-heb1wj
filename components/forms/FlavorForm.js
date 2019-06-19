@@ -4,7 +4,7 @@ export default class FlavorForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value='coconut'
+      value:'coconut'
     };
   }
 
@@ -23,8 +23,15 @@ export default class FlavorForm extends Component {
     return (
       <React.Fragment>
         <form onSubmit={this.handleSubmit}>
-        <label></label>
-
+          <label>
+            Pick your favorite flavor:
+          <select value={this.state.value} onChange={this.handleChange}>
+              <option value="grapefruit">Grapefruit</option>
+              <option value="lime">Lime</option>
+              <option value="coconut">Coconut</option>
+              <option value="mango">Mango</option>
+            </select>
+          </label>
         </form>
       </React.Fragment>
     );
