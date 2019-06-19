@@ -4,7 +4,7 @@ import LoginModule from './components/LoginModule';
 import Mailbox from './components/Mailbox';
 import Page from './components/Page';
 import ListKeys from './components/ListKeys';
-import NameForm  from './components/forms/NameForm';
+import NameForm from './components/forms/NameForm';
 import EssayForm from './components/forms/EssayForm'
 
 export default class App extends Component {
@@ -19,16 +19,20 @@ export default class App extends Component {
         <div>
           This is a component.. App
       </div>
+        <e>-------</e>
         <Toggle />
+        <e>-------</e>
         <LoginModule />
+        <e>-------</e>
         <Mailbox unreadMessages={this.state.unreadMessages}
           isLoggedIn={this.state.isLoggedIn} />
-          <br></br>
+        <e>-------</e>
         <Page />
-        <br></br>
+        <e>-------</e>
         <ListKeys />
-        <br></br>
+        <e>-------</e>
         <NameForm />
+        <e>-------</e>
         <EssayForm />
       </React.Fragment>
     );

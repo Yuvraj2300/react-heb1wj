@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-export default class EssayForm extends Component {
+export default class FlavorForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: 'Write shit here.'
-    }
-  };
+      value='coconut'
+    };
+  }
 
   handleChange = (event) => {
     this.setState({
@@ -15,7 +15,7 @@ export default class EssayForm extends Component {
   }
 
   handleSubmit = (event) => {
-    alert('text submitted : ' + this.state.value);
+    alert('Value for the dropdown changed to :' + event.target.value);
     event.preventDefault();
   }
 
@@ -23,10 +23,8 @@ export default class EssayForm extends Component {
     return (
       <React.Fragment>
         <form onSubmit={this.handleSubmit}>
-          <label>
-            Essay:
-      <textarea value={this.state.value} onChange={this.handleChange} />
-          </label>
+        <label></label>
+
         </form>
       </React.Fragment>
     );
