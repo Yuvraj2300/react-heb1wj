@@ -14,28 +14,31 @@ export default class App extends Component {
     isLoggedIn: true
   };
 
+  // <div>
+  //           This is a component.. App
+  //       </div>
+  //         <e>-------</e>
+  //         <Toggle />
+  //         <e>-------</e>
+  //         <LoginModule />
+  //         <e>-------</e>
+  //         <Mailbox unreadMessages={this.state.unreadMessages}
+  //           isLoggedIn={this.state.isLoggedIn} />
+  //         <e>-------</e>
+  //         <Page />
+  //         <e>-------</e>
+  //         <ListKeys />
+  //         <e>-------</e>
+  //         <NameForm />
+  //         <e>-------</e>
+  //         <EssayForm />
+  //         <FlavorForm />
+
+
   render() {
     return (
       <React.Fragment>
-        <div>
-          This is a component.. App
-      </div>
-        <e>-------</e>
-        <Toggle />
-        <e>-------</e>
-        <LoginModule />
-        <e>-------</e>
-        <Mailbox unreadMessages={this.state.unreadMessages}
-          isLoggedIn={this.state.isLoggedIn} />
-        <e>-------</e>
-        <Page />
-        <e>-------</e>
-        <ListKeys />
-        <e>-------</e>
-        <NameForm />
-        <e>-------</e>
-        <EssayForm />
-        <FlavorForm />
+        tThis is a component.. App
       </React.Fragment>
     );
   }
