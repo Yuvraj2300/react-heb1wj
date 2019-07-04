@@ -11,6 +11,7 @@ export default class TemperatureInput extends Component {
   }
 
   render() {
+    const temperature= this.state.temperature;
     return (
       <React.Fragment>
       </React.Fragment>
