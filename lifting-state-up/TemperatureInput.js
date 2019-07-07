@@ -6,12 +6,18 @@ export default class TemperatureInput extends Component {
    // this.state = { temperature: '' };
   }
 
+
   handleChange = (e) => {
     //this.setState({ temperature: e.target.value });
     this.props.onTemperatureChange(e.target.value);
   }
 
   render() {
+const scaleNames = {
+  c: 'Celsius',
+  f: 'Fahrenheit'
+};
+
     const temperature = this.props.temperature;
     const scale = this.props.scale;
     return (

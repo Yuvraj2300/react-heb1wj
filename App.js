@@ -7,6 +7,7 @@ import ListKeys from './components/ListKeys';
 import NameForm from './components/forms/NameForm';
 import EssayForm from './components/forms/EssayForm';
 import FlavorForm from './components/forms/FlavorForm';
+import Calculator from './lifting-state-up/Calculator';
 
 export default class App extends Component {
   state = {
@@ -38,7 +39,8 @@ export default class App extends Component {
   render() {
     return (
       <React.Fragment>
-        tThis is a component.. App
+        This is a component.. App
+        <Calculator />
       </React.Fragment>
     );
   }

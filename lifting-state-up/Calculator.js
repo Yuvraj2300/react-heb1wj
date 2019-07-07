@@ -1,4 +1,6 @@
-import react, { Component } from 'react';
+import React, { Component } from 'react';
+import TemperatureInput from './TemperatureInput';
+import BoilingVerdict from './BoilingVerdict';
 
 function toCelsius(fahrenheit) {
   return (fahrenheit - 32) * 5 / 9;
@@ -27,11 +29,11 @@ export default class Calculator extends Component {
     }
   }
 
-  handleCelsiusChange(temperature) {
+  handleCelsiusChange = (temperature) => {
     this.setState({ scale: 'c', temperature });
   }
 
-  handleFahrenheitChange(temperature) {
+  handleFahrenheitChange = (temperature) => {
     this.setState({ scale: 'f', temperature });
   }
 
